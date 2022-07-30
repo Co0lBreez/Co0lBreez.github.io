@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="关于本站, 枕头递我一下">
+    <meta name="keywords" content="搭建个人Blog的一些代码指令集, 枕头递我一下">
     <meta name="description" content="怕什么真理无穷，进一寸有进一寸的欢喜">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>关于本站 | 枕头递我一下</title>
+    <title>搭建个人Blog的一些代码指令集 | 枕头递我一下</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -232,7 +232,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">关于本站</h1>
+                    <h1 class="description center-align post-title">搭建个人Blog的一些代码指令集</h1>
                 </div>
             </div>
         </div>
@@ -348,8 +348,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%BC%80%E5%A7%8B/">
-                                <span class="chip bg-color">开始</span>
+                            <a href="/tags/%E4%BB%A3%E7%A0%81%E6%8C%87%E4%BB%A4%E9%9B%86/">
+                                <span class="chip bg-color">代码指令集</span>
                             </a>
                         
                     </div>
@@ -378,7 +378,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    501
+                    380
                 </div>
                 
 
@@ -405,25 +405,60 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="关于本站"><a href="#关于本站" class="headerlink" title="关于本站"></a>关于本站</h2><p>本站是基于 Hexo 与 GitHub Pages 搭建而成的个人博客。</p>
-<p>GitHub Pages 可以简单地理解为一个免费且稳定的服务器；而 Hexo 则是一种成熟的博客框架。所以拿来用就行（我他妈直接白嫖）。(～￣▽￣)～</p>
-<p>搭建是照着视频、文字教程搞的。包括下载软件、配置环境、安装插件、自定义设置……</p>
-<p>敲了无数次的代码与命令行，</p>
-<p>遇到过各种报错，</p>
-<p>Ctrl C Ctrl V 于浏览器与本地间，</p>
-<p>查问题，copy 代码，</p>
-<p>各种重装， Remake ……</p>
-<p>心累……😑</p>
-<p>搭建个人博客其实还有另一种更简单的方案，那就是 Jekyll+GitHub Pages 。相当于是把代码复制到自己的库，改几行代码就能用。之前我用的就是 Jekyll+GitHub Pages ，而且成功搭建了一个站出来。但是UI风格这些吧，说实话不太对我胃口，而且我自已也没有改的能力，找主题吧也没找到合适的。</p>
-<p>找到了个合适的主题后吧，发现是 Hexo 的，然后就开始了上述的折腾。最后终于还是让我给折腾了出来。</p>
-<h2 id="关于主题与作者"><a href="#关于主题与作者" class="headerlink" title="关于主题与作者"></a>关于主题与作者</h2><p>主题：<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery">https://github.com/blinkfox/hexo-theme-matery</a></p>
-<p>作者：<a target="_blank" rel="noopener" href="https://github.com/blinkfox">闪烁之狐 (blinkfox)</a></p>
-<h2 id="关于-GitHub-Pages"><a href="#关于-GitHub-Pages" class="headerlink" title="关于 GitHub Pages"></a>关于 GitHub Pages</h2><p>这玩意儿白给、免费。但相应的，给的带宽和流量就小得可怜了，所以几M的图片，它能加载几十秒，甚至一两分钟。纯文本无图，少图的话倒是加载很快，但这样就太朴实无华了，不花哨、不合我心意。</p>
-<p>所以站内可见、不可见的图片基本都经过了我的手动压缩，一律阉割到了1280p（最宽、最长1280p），这也是无奈之举。要不就得牺牲访问速度，可能进来几分钟都在转圈。</p>
-<p>可是这样也快不到哪儿去，初次加载时可能也会很折磨。但是老话说得好：</p>
-<blockquote>
-<p>“又不是不能用~”</p>
-</blockquote>
+                <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>本博客系统基于 GitHub Pages+Hexo 搭建。</p>
+<p>本文主要是些命令（Git、Hexo）的集合，并不起指导作用，只是事后整理出来，供个人备忘。</p>
+<h2 id="基本流程"><a href="#基本流程" class="headerlink" title="基本流程"></a>基本流程</h2><table>
+<thead>
+<tr>
+<th>配置 Git</th>
+<th>创建库（GitHub）</th>
+<th>连接库</th>
+<th>配置 Hexo</th>
+<th>部署 Hexo</th>
+<th>自定义</th>
+<th>完成</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-&gt;</td>
+<td>-&gt;</td>
+<td>-&gt;</td>
+<td>-&gt;</td>
+<td>-&gt;</td>
+<td>-&gt;</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>上述流程又可简化为两步</p>
+<table>
+<thead>
+<tr>
+<th>Git 与 GitHub 库的连接</th>
+<th>Hexo 的配置与部署</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-&gt;</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 本地用户名</span><br><span class="line">git config --global user.name "Co0lBreez"</span><br><span class="line"># 本地用户邮箱</span><br><span class="line">git config --global user.email  "asmortal@qq.com"</span><br><span class="line"># 密钥</span><br><span class="line">ssh-keygen -t rsa -C "asmortal@qq.com"</span><br><span class="line"># 验证连接</span><br><span class="line">ssh -T git@github.com</span><br></pre></td></tr></tbody></table></figure>
+
+<hr>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># Git 初始化</span><br><span class="line">git init</span><br><span class="line"># 提交文件（非上传）</span><br><span class="line">git add README.md</span><br><span class="line"># add 当前目录下所有文件</span><br><span class="line">git add .</span><br><span class="line">#对提交进行备注</span><br><span class="line">git commit -m "备注内容"</span><br><span class="line">#连接到远程仓库</span><br><span class="line">git remote add origin git@github.com:Co0lBreez/Co0lBreez.github.io.git</span><br><span class="line"># 上传提交的文件</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></tbody></table></figure>
+
+<hr>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></tbody></table></figure>
+
+<p>在本地部署OK后（「hexo server」访问<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 没有问题）</p>
+<p>1.安装 hexo-deployer-git（部署插件）</p>
+   <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></tbody></table></figure>
+
+<p>2.修改_config.yml文件（为了能让Bolg能部署到 GitHub Pages 上）</p>
+ <figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span>  </span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/Co0lBreez/Co0lBreez.github.io.git</span>	<span class="comment"># 库（repository）的地址</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span>	<span class="comment">#分支（branch）名</span></span><br><span class="line">  <span class="attr">message:</span> <span class="string">我崩溃了(〃￣︶￣):</span> {{ <span class="string">now('YYYY-MM-DD</span> <span class="string">HH:mm:ss')</span> }}<span class="string">)</span>	<span class="comment"># 自定义提交信息</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>   3.更新与部署</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># hexo c 清除缓存文件 (db.json) 和已生成的静态文件 (public)</span><br><span class="line">hexo clean	</span><br><span class="line"># hexo g 生成静态文件</span><br><span class="line">hexo generate</span><br><span class="line"># hexo d 部署网站</span><br><span class="line">hexo deploy	</span><br></pre></td></tr></tbody></table></figure>
 
                 
             </div>
@@ -450,7 +485,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://co0lbreez.github.io/2022/07/31/guan-yu-ben-zhan/">https://co0lbreez.github.io/2022/07/31/guan-yu-ben-zhan/</a>
+                    <a href="https://co0lbreez.github.io/2022/07/31/da-jian-ge-ren-blog-de-yi-xie-dai-ma-zhi-ling-ji/">https://co0lbreez.github.io/2022/07/31/da-jian-ge-ren-blog-de-yi-xie-dai-ma-zhi-ling-ji/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -488,8 +523,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%BC%80%E5%A7%8B/">
-                                    <span class="chip bg-color">开始</span>
+                                <a href="/tags/%E4%BB%A3%E7%A0%81%E6%8C%87%E4%BB%A4%E9%9B%86/">
+                                    <span class="chip bg-color">代码指令集</span>
                                 </a>
                             
                         </div>
@@ -659,9 +694,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2022/07/31/da-jian-ge-ren-blog-de-yi-xie-dai-ma-zhi-ling-ji/">
                     <div class="card-image">
@@ -679,9 +715,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-07-31
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-31
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -690,6 +726,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -705,7 +742,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2022/07/31/guan-yu-ben-zhan/">
@@ -735,7 +772,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
