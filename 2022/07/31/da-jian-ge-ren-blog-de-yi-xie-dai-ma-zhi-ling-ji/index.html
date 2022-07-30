@@ -454,7 +454,7 @@
 <p>1.安装 hexo-deployer-git（部署插件）</p>
    <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></tbody></table></figure>
 
-<p>2.修改_config.yml文件（为了能让Bolg能部署到 GitHub Pages 上）</p>
+<p>2.修改_config.yml文件（为了能让 Hexo 能部署到 GitHub Pages 上）</p>
  <figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span>  </span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/Co0lBreez/Co0lBreez.github.io.git</span>	<span class="comment"># 库（repository）的地址</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span>	<span class="comment">#分支（branch）名</span></span><br><span class="line">  <span class="attr">message:</span> <span class="string">我崩溃了(〃￣︶￣):</span> {{ <span class="string">now('YYYY-MM-DD</span> <span class="string">HH:mm:ss')</span> }}<span class="string">)</span>	<span class="comment"># 自定义提交信息</span></span><br></pre></td></tr></tbody></table></figure>
 
 <p>   3.更新与部署</p>
