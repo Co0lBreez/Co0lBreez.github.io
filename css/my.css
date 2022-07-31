@@ -1,1 +1,11 @@
 /* Here is your custom css styles. */
+/* 替换鼠标样式 */
+* {
+    cursor: url("/medias/images/default.cur"), auto !important;
+}
+
+
+
+:active {
+    cursor: url("/medias/images/click.cur"), auto !important;
+}
