@@ -227,7 +227,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -378,14 +378,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    380
+                    448
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -399,6 +399,9 @@
         </div>
         <hr class="clearfix">
 
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
         
 
         
@@ -442,23 +445,59 @@
 <td></td>
 </tr>
 </tbody></table>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 本地用户名</span><br><span class="line">git config --global user.name "Co0lBreez"</span><br><span class="line"># 本地用户邮箱</span><br><span class="line">git config --global user.email  "asmortal@qq.com"</span><br><span class="line"># 密钥</span><br><span class="line">ssh-keygen -t rsa -C "asmortal@qq.com"</span><br><span class="line"># 验证连接</span><br><span class="line">ssh -T git@github.com</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="代码命令行"><a href="#代码命令行" class="headerlink" title="代码命令行"></a>代码命令行</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 本地用户名</span>
+<span class="token function">git</span> config --global user.name <span class="token string">"Co0lBreez"</span>
+<span class="token comment"># 本地用户邮箱</span>
+<span class="token function">git</span> config --global user.email  <span class="token string">"asmortal@qq.com"</span>
+<span class="token comment"># 密钥</span>
+ssh-keygen -t rsa -C <span class="token string">"asmortal@qq.com"</span>
+<span class="token comment"># 验证连接</span>
+<span class="token function">ssh</span> -T git@github.com<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <hr>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># Git 初始化</span><br><span class="line">git init</span><br><span class="line"># 提交文件（非上传）</span><br><span class="line">git add README.md</span><br><span class="line"># add 当前目录下所有文件</span><br><span class="line">git add .</span><br><span class="line">#对提交进行备注</span><br><span class="line">git commit -m "备注内容"</span><br><span class="line">#连接到远程仓库</span><br><span class="line">git remote add origin git@github.com:Co0lBreez/Co0lBreez.github.io.git</span><br><span class="line"># 上传提交的文件</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># Git 初始化</span>
+<span class="token function">git</span> init
+<span class="token comment"># 提交文件（非上传）</span>
+<span class="token function">git</span> <span class="token function">add</span> README.md	<span class="token comment"># git add . (add 当前目录下所有文件)</span>
+<span class="token comment">#对提交进行备注</span>
+<span class="token function">git</span> commit -m <span class="token string">"备注内容"</span>
+<span class="token comment">#连接到远程仓库</span>
+<span class="token function">git</span> remote <span class="token function">add</span> origin git@github.com:Co0lBreez/Co0lBreez.github.io.git
+<span class="token comment"># 上传提交的文件</span>
+<span class="token function">git</span> push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <hr>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-cli -g
+hexo init blog
+<span class="token builtin class-name">cd</span> blog
+<span class="token function">npm</span> <span class="token function">install</span>
+hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>在本地部署OK后（「hexo server」访问<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 没有问题）</p>
+<p>在本地部署OK后（<code>hexo server</code> 命令访问<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 没有问题）</p>
 <p>1.安装 hexo-deployer-git（部署插件）</p>
-   <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></tbody></table></figure>
+   <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>2.修改_config.yml文件（为了能让 Hexo 能部署到 GitHub Pages 上）</p>
- <figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span>  </span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/Co0lBreez/Co0lBreez.github.io.git</span>	<span class="comment"># 库（repository）的地址</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span>	<span class="comment">#分支（branch）名</span></span><br><span class="line">  <span class="attr">message:</span> <span class="string">我崩溃了(〃￣︶￣):</span> {{ <span class="string">now('YYYY-MM-DD</span> <span class="string">HH:mm:ss')</span> }}<span class="string">)</span>	<span class="comment"># 自定义提交信息</span></span><br></pre></td></tr></tbody></table></figure>
+ <pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">deploy</span><span class="token punctuation">:</span>  
+  <span class="token key atrule">type</span><span class="token punctuation">:</span> git
+  <span class="token key atrule">repo</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//github.com/Co0lBreez/Co0lBreez.github.io.git	<span class="token comment"># 库（repository）的地址</span>
+  <span class="token key atrule">branch</span><span class="token punctuation">:</span> master	<span class="token comment">#分支（branch）名</span>
+  <span class="token key atrule">message</span><span class="token punctuation">:</span> <span class="token key atrule">我崩溃了(〃￣︶￣)</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">{</span> now('YYYY<span class="token punctuation">-</span>MM<span class="token punctuation">-</span>DD HH<span class="token punctuation">:</span>mm<span class="token punctuation">:</span>ss') <span class="token punctuation">}</span><span class="token punctuation">}</span>)	<span class="token comment"># 自定义提交信息</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>   3.更新与部署</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># hexo c 清除缓存文件 (db.json) 和已生成的静态文件 (public)</span><br><span class="line">hexo clean	</span><br><span class="line"># hexo g 生成静态文件</span><br><span class="line">hexo generate</span><br><span class="line"># hexo d 部署网站</span><br><span class="line">hexo deploy	</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean	<span class="token comment"># hexo c 清除缓存文件 (db.json) 和已生成的静态文件 (public)</span>
+hexo generate	<span class="token comment"># hexo g 生成静态文件</span>
+hexo deploy	<span class="token comment"># hexo d 部署网站	</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="常见报错的处理"><a href="#常见报错的处理" class="headerlink" title="常见报错的处理"></a>常见报错的处理</h2><blockquote>
+<p>error: failed to push some refsto ‘远程仓库地址’</p>
+</blockquote>
+<p>执行以下命令</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> pull --rebase origin master	<span class="token comment"># 拉取</span>
+<span class="token function">git</span> push -u origin master	<span class="token comment">#	推送</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h2 id="一些帮助文档"><a href="#一些帮助文档" class="headerlink" title="一些帮助文档"></a>一些帮助文档</h2><p><a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md</a></p>
+<p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p>
 
                 
             </div>
@@ -646,7 +685,7 @@
     <div id="rewardModal" class="modal">
         <div class="modal-content">
             <a class="close modal-close"><i class="fas fa-times"></i></a>
-            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <h4 class="reward-title">富婆~饿~饭饭</h4>
             <div class="reward-content">
                 <div class="reward-tabs">
                     <ul class="tabs row">
@@ -703,7 +742,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="搭建个人Blog的一些代码指令集">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="搭建个人Blog的一些代码指令集">
                         
                         <span class="card-title">搭建个人Blog的一些代码指令集</span>
                     </div>
@@ -711,7 +750,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            本文主要是些命令（Git、Hexo）的集合，并不起指导作用，只是事后整理出来，供个人备忘
                         
                     </div>
                     <div class="publish-info">
@@ -749,7 +788,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="关于本站">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="关于本站">
                         
                         <span class="card-title">关于本站</span>
                     </div>
@@ -757,7 +796,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            本站是基于 Hexo 与 GitHub Pages 搭建而成的个人博客
                         
                     </div>
                     <div class="publish-info">
@@ -925,7 +964,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">881</span>&nbsp;字
+                class="white-color">953</span>&nbsp;字
             
             
             
