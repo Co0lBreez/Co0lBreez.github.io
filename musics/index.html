@@ -377,7 +377,7 @@
 
 
 
-    <div id="aplayer-aSjcqzuT" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="8570209961" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86" data-order="random" data-volume="0.6"></div>
+    <div id="aplayer-XOKBVdyL" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="8570209961" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86" data-order="random" data-volume="0.6"></div>
 
 
 <br>
@@ -741,6 +741,15 @@ $(function () {
                                                                                                                                         $('#sum-moon-icon').removeleClass("fa-sun").addClass('fa-moon')
                                                                                                                                     }
                                                                                                                                 </script>
+                                                                                                                                <!-- 樱花雨脚本 -->
+                                                                                                                                <script
+                                                                                                                                    type="text/javascript">
+                                                                                                                                        // 只在桌面版网页启用特效
+                                                                                                                                        var windowWidth = $(window).width();
+                                                                                                                                        if (windowWidth > 768) {
+                                                                                                                                            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+                                                                                                                                        }
+                                                                                                                                    </script>
 
                 </body>
 
