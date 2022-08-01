@@ -484,7 +484,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.1k
+                    2.2k
                 </div>
                 
 
@@ -645,9 +645,11 @@
 
 <p><code>清理</code>	<code>生成</code>	<code>压缩</code>	<code>生成</code></p>
 <p>多了一步<code>压缩再生成</code>的步骤（gulp 插件〔压缩网页、图片体积，优化加载〕）。无优化的基本步骤为3步：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean
-hexo generate
-hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean	<span class="token comment"># 清理</span>
+hexo generate	<span class="token comment"># 生成</span>
+hexo deploy	<span class="token comment"># 部署</span>
+<span class="token comment"># 可简写为：</span>
+hexo clean <span class="token operator">&amp;&amp;</span> hexo generate <span class="token operator">&amp;&amp;</span> hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
                 
