@@ -321,6 +321,19 @@
 </header>
 
                         
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('哦豁~付费内容')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -463,6 +476,15 @@
                 </div>
                 <div class="col s5 right-align">
                     
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E4%BB%A3%E7%A0%81%E6%8C%87%E4%BB%A4/" class="post-category">
+                                代码指令
+                            </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
 
@@ -514,7 +536,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在此页记录一些不用会忘，但以后可能还会用到的指令、代码。有些东西就是用时就要大量用到，就要去找、去查，但不用的话很快就会很快遗忘，然后遇到同样的问题，又要去找、去查……</p>
+                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在此页记录一些不用会忘，但以后可能还会用到的指令、代码。有些东西就是用时就要大量用到，就要去找、去查，但不用的话很快就会遗忘，然后遇到同样的问题，又要去找、去查……</p>
 <p>所以最好就是像记笔记一样，把这些东西简短摘录，或者说用自己的方式给记录下来。</p>
 <p>之前是本地文本文件+浏览器书签的方式。本地的数据说实话不太安全，系统只要一崩溃，不说其他盘能不能活，C盘的东西必定救不回来。我是非必要，东西不放C盘，然后定期同步重要文件，也就是上传至云端、网盘；因为吃过一次亏。但它麻烦呐，我也懒……</p>
 <p>浏览器书签虽然方便，但其实也麻烦（有点方便但只有一点），太分散、不集中，有很多自己不需要的内容、不便检索……</p>
@@ -838,7 +860,7 @@ hexo clean <span class="token operator">&amp;&amp;</span> hexo generate <span cl
     <div id="rewardModal" class="modal">
         <div class="modal-content">
             <a class="close modal-close"><i class="fas fa-times"></i></a>
-            <h4 class="reward-title">富婆~饿~饭饭</h4>
+            <h4 class="reward-title">富婆~饿~饭饭🤤🤤🤤</h4>
             <div class="reward-content">
                 <div class="reward-tabs">
                     <ul class="tabs row">
@@ -912,8 +934,12 @@ hexo clean <span class="token operator">&amp;&amp;</span> hexo generate <span cl
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            枕头递我一下
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E4%BB%A3%E7%A0%81%E6%8C%87%E4%BB%A4/" class="post-category">
+                                    代码指令
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -940,8 +966,7 @@ hexo clean <span class="token operator">&amp;&amp;</span> hexo generate <span cl
                 <a href="/2022/08/02/dao-de-jing/">
                     <div class="card-image">
                         
-                        
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="道德经">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="道德经">
                         
                         <span class="card-title">道德经</span>
                     </div>
@@ -958,8 +983,12 @@ hexo clean <span class="token operator">&amp;&amp;</span> hexo generate <span cl
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            枕头递我一下
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%91%98%E5%BD%95/" class="post-category">
+                                    摘录
+                                </a>
+                            
                             
                         </span>
                     </div>
