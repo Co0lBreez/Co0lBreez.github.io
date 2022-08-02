@@ -105,6 +105,10 @@ $(function () {
             // 启用字幕
             subHtmlSelectorRelative: true
         });
+        // 自添加「解决懒加载与gallery插件的冲突」
+        $(document).find('img[data-original]').each(function () {
+            $(this).parent().attr("href", $(this).attr("data-original"));
+        });
 
         // progress bar init
         const progressElement = window.document.querySelector('.progress-bar');
