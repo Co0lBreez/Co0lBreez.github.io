@@ -87,15 +87,6 @@
         </a>
       </li>
       
-      <li>
-        <a href="/videos">
-          
-          <i class="fas fa-video" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>视频</span>
-        </a>
-      </li>
-      
     </ul>
     
   </li>
@@ -243,16 +234,6 @@
 				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
 			      
 		          <span>音乐</span>
-                  </a>
-                </li>
-              
-                <li>
-
-                  <a href="/videos " style="margin-left:75px">
-				  
-				   <i class="fa fas fa-video" style="position: absolute;left:50px" ></i>
-			      
-		          <span>视频</span>
                   </a>
                 </li>
               
@@ -542,7 +523,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-08-04
+                    2022-08-06
                 </div>
                 
 
@@ -740,6 +721,8 @@ hexo deploy	<span class="token comment"># 本地预览没有问题后部署（�
 <h3 id="基于-gulp-插件的压缩优化"><a href="#基于-gulp-插件的压缩优化" class="headerlink" title="基于 gulp 插件的压缩优化"></a>基于 gulp 插件的压缩优化</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean <span class="token operator">&amp;&amp;</span> hexo generate <span class="token operator">&amp;&amp;</span> gulp <span class="token operator">&amp;&amp;</span> hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>多了一步<code>压缩再生成</code>的步骤。完成后使用<code>hexo deploy</code>部署。</p>
+<h3 id="更新Hexo与插件"><a href="#更新Hexo与插件" class="headerlink" title="更新Hexo与插件"></a>更新Hexo与插件</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> update<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>用国内镜像源的可使用<code>cnmp update</code>命令</p>
 <h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><h3 id="Git的基本操作"><a href="#Git的基本操作" class="headerlink" title="Git的基本操作"></a>Git的基本操作</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> init	<span class="token comment"># 初始化（创建本地库）</span>
 <span class="token function">git</span> <span class="token function">add</span> README.md	<span class="token comment"># 添加 README.md</span>
 <span class="token function">git</span> commit -m <span class="token string">"我是提交备注"</span>	<span class="token comment"># 备注，提交</span>
