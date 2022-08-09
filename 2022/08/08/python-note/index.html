@@ -523,7 +523,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-08-08
+                    2022-08-09
                 </div>
                 
 
@@ -564,7 +564,7 @@
 <span class="token keyword">from</span> PIL <span class="token keyword">import</span> Image
 <span class="token keyword">import</span> os
 
-<span class="token comment"># 要使用此代码，需导入`Image`库：`pip install Image`</span>
+<span class="token comment"># 要使用此代码，需导入`Image`模块：`pip install Image`</span>
 
 <span class="token comment"># 欲处理的图片的目录，注意结尾一定要以`/`结束</span>
 <span class="token comment"># file_in = "S:/Projects/Python/app/input/"</span>
@@ -607,7 +607,7 @@ workdir <span class="token operator">=</span> os<span class="token punctuation">
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> PIL <span class="token keyword">import</span> Image
 <span class="token keyword">import</span> os
 
-<span class="token comment"># 要使用此代码，需导入`Image`库：`pip install Image`</span>
+<span class="token comment"># 要使用此代码，需导入`Image`模块：`pip install Image`</span>
 
 <span class="token comment"># 欲处理的图片的目录，注意结尾一定要以`/`结束</span>
 <span class="token comment"># file_in = "S:/Projects/Python/app/input/"</span>
@@ -656,7 +656,7 @@ workdir <span class="token operator">=</span> os<span class="token punctuation">
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> PIL <span class="token keyword">import</span> Image
 <span class="token keyword">import</span> os
 
-<span class="token comment"># 要使用此代码，需导入`Image`库：`pip install Image`</span>
+<span class="token comment"># 要使用此代码，需导入`Image`模块：`pip install Image`</span>
 
 <span class="token comment"># 欲处理的图片的目录，注意结尾一定要以`/`结束</span>
 <span class="token comment"># file_in = "S:/Projects/Python/app/input/"</span>
@@ -720,6 +720,19 @@ pic_out <span class="token operator">=</span> file_in <span class="token operato
 <pre class="line-numbers language-python" data-language="python"><code class="language-python">os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>isdir<span class="token punctuation">(</span><span class="token string">'S:/test'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>判断目录是否存在（输出布尔值）</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python">os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>exists<span class="token punctuation">(</span><span class="token string">'S:/test'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>获取文件所在目录</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>dirname<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>获取文件大小（字节数)</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>getsize<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>获取文件名和后缀（完整文件名）</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>basename<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+
                 
             </div>
             <hr/>
